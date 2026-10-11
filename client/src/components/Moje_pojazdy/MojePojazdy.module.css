@@ -1,0 +1,69 @@
+.vehicle-img
+{
+	width: 100%;
+	height: auto;
+}
+
+.vehicle,.rezerwacja
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border: 2px solid black;
+	border-radius: 5px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+	padding: 1%;
+}
+
+.photo
+{
+	width: 30% !important;
+	margin: auto;
+}
+
+.vehicle-container
+{
+	width: 50%;
+	margin: 2%;
+}
+
+.vehicle-data
+{
+	display: flex;
+	justify-content: space-between;
+
+	color: #ffa500;
+	font-size: 18px;
+	border: 2px dotted black;
+}
+
+.vehicle-data > *
+{
+	padding: 10px;
+}
+
+@media (max-width: 768px) {
+	.vehicle {
+		flex-direction: column;
+        align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.vehicle-container {
+		width: 100%;
+		margin: auto;
+	}
+}
+
+.wazne
+{
+	color: green;
+}
+
+.niewazne
+{
+	color: red;
+}

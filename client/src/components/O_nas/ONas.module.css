@@ -1,0 +1,45 @@
+article
+{
+	font-size: 18px;
+	color: white;
+}
+
+.photos
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 2em 0;
+}
+
+.photos > img
+{
+	display: block;
+	margin: 10px;
+	width: 40%;
+	height: auto;
+	border-radius: 14px;
+	transition: all 0.5s ease-in-out;
+}
+
+.photos > img:hover
+{
+	transition: all 0.5s ease-in-out;
+	opacity: 70%;
+	scale: 105%;
+	cursor: pointer;
+}
+
+@media (max-width: 1250px){
+	.photos {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.photos > img {
+		width: 80% !important;
+		height: auto !important;
+	}
+}

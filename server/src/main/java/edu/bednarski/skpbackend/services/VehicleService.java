@@ -1,0 +1,18 @@
+package edu.bednarski.skpbackend.services;
+
+
+import edu.bednarski.skpbackend.domain.dto.VehicleDto;
+import java.util.List;
+import java.util.Optional;
+
+public interface VehicleService {
+
+    Optional<VehicleDto> create(VehicleDto vehicleDto, String userEmail);
+    List<VehicleDto> findAll(String userEmail);
+
+    Optional<VehicleDto> find(Long id,String userEmail);
+
+    Optional<VehicleDto> partialUpdate(VehicleDto vehicleDto, String userEmail);
+
+    Optional<VehicleDto> delete(VehicleDto vehicleDto, String userEmail);
+}

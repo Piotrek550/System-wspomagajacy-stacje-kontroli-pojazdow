@@ -1,0 +1,90 @@
+.progress-bar
+{
+	margin: 10px auto;
+	width: 60%;
+	padding: 0;
+	background-color: black;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: stretch;
+	border-radius: 10px;
+}
+
+.first
+{
+	height: 1em;
+	flex: 1;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.second
+{
+	height: 1em;
+	flex: 1;
+}
+
+.third
+{
+	height: 1em;
+	flex: 1;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.step
+{
+	text-align: center;
+	color: #ddd;
+	font-size: 26px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 400;
+}
+
+select,input[type=date]
+{
+	margin: 5px 0;
+	border: 3px solid gray;
+	border-radius: 7px;
+	font-size: 20px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+input[type=submit]
+{
+	min-width: 100px;
+	padding: 10px;
+	background-color: #ffa500;
+	border: 2px solid #cc7200;
+	border-radius: 10px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	color: #000;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-size: 20px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.confirm-data
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	border-bottom: 2px dotted black;
+}
+
+.confirm-data > *
+{
+	font-size: 20px;
+	padding: 10px;
+	text-align: left;
+}

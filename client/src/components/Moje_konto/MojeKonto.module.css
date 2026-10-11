@@ -1,0 +1,137 @@
+/* MOJE KONTO */
+.user-info
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+	margin: 2%;
+	padding: 1%;
+	color: white;
+}
+
+.photo
+{
+	margin: auto;
+}
+
+.user-img
+{
+	width: 50%;
+	height: auto;
+	margin: auto;
+}
+
+.user-container
+{
+	width: 50%;
+	margin: 2%;
+}
+
+.user-data
+{
+	display: flex;
+	justify-content: space-between;
+
+	color: #ffa500;
+	font-size: 20px;
+}
+
+.user-data > *
+{
+	padding: 10px;
+}
+
+@media (max-width: 768px) {
+	.user-info {
+		flex-direction: column;
+        align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.user-container {
+		width: 100%;
+		margin: auto;
+	}
+}
+
+.logout-btn
+{
+	background-color: red;
+	border: 2px solid #770000;
+	color: white !important;
+}
+
+.logout-btn:hover
+{
+	background-color: darkred;
+	border: 2px solid red;
+}
+
+.delete-account-btn
+{
+	background-color: #222;
+	border: 2px solid black;
+	color: white !important;
+}
+
+.delete-account-btn:hover
+{
+	background-color: #555;
+}
+
+/* EDYCJA KONTA */
+.moje_konto-edit-div
+{
+	width: 60%;
+	background-color: #333;
+	border-radius: 14px;
+	border: 2px solid #cc7300;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	margin: 1em auto;
+	color: white;
+	padding: 1.618em;
+}
+
+.save-changes-button, .cancel-editing-button
+{
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+.edit-section-h3
+{
+	font-size: 26px;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+/* USUWANIE KONTA */
+.moje_konto-delete-div
+{
+	width: 60%;
+	background-color: #333;
+	border-radius: 14px;
+	border: 2px solid #ff3333;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	margin: 1em auto;
+	color: white;
+	padding: 1.618em;
+}
+
+.delete-button, .cancel-delete-button
+{
+	margin-right: 1em;
+	margin-left: 1em;
+	background-color: #770000;
+	color: #FFFFFF;
+}
